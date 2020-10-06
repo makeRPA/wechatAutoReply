@@ -3,7 +3,7 @@
     <x:Property Name="out_MarkTags" Type="OutArgument(scg:List(x:String))" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>748,4439</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>748,4585</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -79,20 +79,20 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="getMarkTags" sap:VirtualizedContainerService.HintSize="758,4274" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="getMarkTags" sap:VirtualizedContainerService.HintSize="758,4420" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'wechat.exe  微信'" sap:VirtualizedContainerService.HintSize="716,4182" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="a1e55e5232250d011c35b4975b87b146" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'wechat.exe  微信'" sap:VirtualizedContainerService.HintSize="716,4328" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="a1e55e5232250d011c35b4975b87b146" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="682,4036" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="682,4182" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="bTagsVisable" />
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="currentTags" />
@@ -137,6 +137,18 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
+            <ui:Callout Content="获取自动回复标签" DisplayName="Tooltip 'push button  标签'" sap:VirtualizedContainerService.HintSize="640,106" sap2010:WorkflowViewState.IdRef="Callout_1" Timer="5000" Title="提示">
+              <ui:Callout.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a73cab54-560c-4cad-be0c-ad04c4a8e979" InformativeScreenshot="d0c9ac16fb754e477302e0641d9af4f3" Selector="&lt;ctrl name='标签' role='push button' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Callout.Target>
+            </ui:Callout>
             <ui:UiElementExists DisplayName="Element Exists 'push button  标签'" sap:VirtualizedContainerService.HintSize="640,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Exists>
                 <OutArgument x:TypeArguments="x:Boolean">
