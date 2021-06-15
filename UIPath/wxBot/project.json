@@ -36,7 +36,13 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "deb75344-f7c5-4cee-a29a-ff2fe41037b2",
+        "fileName": "Test\\TestGetMarkTags.xaml"
+      }
+    ],
     "modernBehavior": false
   },
   "expressionLanguage": "CSharp",
