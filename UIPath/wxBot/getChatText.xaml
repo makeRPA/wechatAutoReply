@@ -3,7 +3,7 @@
     <x:Property Name="out_newChatText" Type="OutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>505,515</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>732,515</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -34,6 +34,7 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -89,7 +90,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="305,339" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,438" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="chatItems" />
             </Sequence.Variables>
@@ -98,7 +99,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:FindChildren DisplayName="Find Children 'push button  串串英语壮哥'" Filter="&lt;ctrl /&gt;" sap:VirtualizedContainerService.HintSize="263,53" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+            <ui:FindChildren DisplayName="Find Children 'push button  串串英语壮哥'" Filter="&lt;ctrl /&gt;" sap:VirtualizedContainerService.HintSize="334,53" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
               <ui:FindChildren.Children>
                 <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
                   <mca:CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">chatItems</mca:CSharpReference>
@@ -121,7 +122,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:FindChildren>
-            <Assign sap:VirtualizedContainerService.HintSize="263,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">
                   <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">out_newChatText</mca:CSharpReference>
@@ -133,7 +134,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="311,207" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
+            <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="334,53" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="ui:UiElement">
                   <ActivityAction.Argument>
@@ -276,6 +277,23 @@
                 </InArgument>
               </ui:ForEach.Values>
             </ui:ForEach>
+            <ui:Replace sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Replace_1" IsBuilderTabModified="False" Pattern="我通过了你的朋友验证请求，现在我们可以开始聊天了" RegexOption="IgnoreCase, Compiled" Replacement="自动回复_新朋友">
+              <ui:Replace.Input>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">out_newChatText</mca:CSharpValue>
+                </InArgument>
+              </ui:Replace.Input>
+              <ui:Replace.Result>
+                <OutArgument x:TypeArguments="x:String">
+                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">out_newChatText</mca:CSharpReference>
+                </OutArgument>
+              </ui:Replace.Result>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Replace>
           </Sequence>
         </ActivityAction>
       </ui:WindowScope.Body>
