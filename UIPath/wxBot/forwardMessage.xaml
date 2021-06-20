@@ -331,10 +331,7 @@
                             </OutArgument>
                           </ui:UiElementExists.Exists>
                           <ui:UiElementExists.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9296f48e-a204-4bcd-a855-49b7971548d9" InformativeScreenshot="557b6504d1dbc7f9ab92e3a78095ad70" Selector="&lt;wnd app='wechat.exe' cls='SelectContactWnd' title='微信' /&gt;&lt;ctrl name='联系人' role='text' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9296f48e-a204-4bcd-a855-49b7971548d9" InformativeScreenshot="557b6504d1dbc7f9ab92e3a78095ad70" Selector="&lt;wnd app='wechat.exe' cls='SelectContactWnd' title='微信' /&gt;&lt;ctrl name='联系人' role='text' /&gt;" TimeoutMS="3000">
                               <ui:Target.WaitForReady>
                                 <InArgument x:TypeArguments="ui:WaitForReady" />
                               </ui:Target.WaitForReady>
