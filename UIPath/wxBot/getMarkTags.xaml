@@ -156,7 +156,7 @@
                 </OutArgument>
               </ui:UiElementExists.Exists>
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="865b4f34-633d-4d95-96db-13288d97bd65" InformativeScreenshot="d0c9ac16fb754e477302e0641d9af4f3" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;&lt;ctrl idx='2' role='list' /&gt;" TimeoutMS="3000">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="865b4f34-633d-4d95-96db-13288d97bd65" InformativeScreenshot="d0c9ac16fb754e477302e0641d9af4f3" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;&lt;ctrl idx='2' role='list' /&gt;" TimeoutMS="{x:Null}">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>

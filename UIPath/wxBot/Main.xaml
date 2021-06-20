@@ -102,7 +102,7 @@
         </OutArgument>
       </ui:UiElementExists.Exists>
       <ui:UiElementExists.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19d8e133-4148-4448-811a-f9cdab628150" InformativeScreenshot="691493e335ed1501e13e650935f08db6" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;&lt;ctrl name='聊天' role='push button' /&gt;" TimeoutMS="3000">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19d8e133-4148-4448-811a-f9cdab628150" InformativeScreenshot="691493e335ed1501e13e650935f08db6" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;&lt;ctrl name='聊天' role='push button' /&gt;" TimeoutMS="{x:Null}">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
@@ -442,7 +442,7 @@
                                             </OutArgument>
                                           </ui:UiElementExists.Exists>
                                           <ui:UiElementExists.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0bf8fc16-245d-4096-a66d-f37a34594f23" InformativeScreenshot="efcb9b0a6ca26d36bdbb027df6d23bd2" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;&lt;ctrl name='输入' role='editable text' /&gt;" TimeoutMS="3000">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0bf8fc16-245d-4096-a66d-f37a34594f23" InformativeScreenshot="efcb9b0a6ca26d36bdbb027df6d23bd2" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;&lt;ctrl name='输入' role='editable text' /&gt;" TimeoutMS="{x:Null}">
                                               <ui:Target.WaitForReady>
                                                 <InArgument x:TypeArguments="ui:WaitForReady" />
                                               </ui:Target.WaitForReady>
