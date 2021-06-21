@@ -7,7 +7,7 @@
     "UiPath.Mail.Activities": "[1.9.3]",
     "UiPath.System.Activities": "[20.10.1]",
     "UiPath.UIAutomation.Activities": "[20.10.5]",
-    "wxBotLib": "1.0.0"
+    "wxBotLib": "2.0.0"
   },
   "webServices": [],
   "entitiesStores": [],
