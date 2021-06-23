@@ -7,13 +7,13 @@
     "UiPath.Mail.Activities": "1.9.3",
     "UiPath.System.Activities": "20.10.1",
     "UiPath.UIAutomation.Activities": "20.10.5",
-    "wxBotLib": "2.0.0"
+    "wxBotLib": "2.0.1"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.0.0",
-  "projectVersion": "2.0.2",
+  "projectVersion": "2.0.3",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
